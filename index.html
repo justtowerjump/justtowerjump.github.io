@@ -5,9 +5,10 @@
     </head>
     
     <body>
-        <main class=os_iOS-or-os_Android>
+      <div class=fullCont>
+          <main class=os_iOS-or-os_Android>
     
-            <h1>Hide an unsupported OS download button on mobile</h1>
+            <h1>Download now</h1>
           
             <section class=btns_cnt-downloads>
           
@@ -20,17 +21,9 @@
               </a>
           
             </section>
-          
-            <p>Detection script adds <code>.os_iOS</code> or <code>.os_Android</code> to the <code>html</code> element.<br>
-              Buttons below fake that detection purely for visualisation purposes:
-            </p>
-            
-            <section class=btns_cnt-fakes>
-              <button class=fake_btn-os_iOS>Fake iOS</button>
-              <button class=fake_btn-os_Android>Fake Android</button>
-            </section>
-          
+
           </main>
+      </div>
           
           <svg class=visually-hidden id=buttons-appStore-googlePlay>
             <defs>
