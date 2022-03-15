@@ -13,7 +13,12 @@
   ::after {
     box-sizing: inherit;
   }
+  html{
+      height: 100%;
+  }
+  
   body {
+    height: 100%;
     font-family: sans-serif;
     line-height: 1.5;
     margin: 1rem;
@@ -22,6 +27,11 @@
     color: hsl(269,19%,30%);
     background-color: #FFE4C4
   }
+  
+  fullCont{
+    height:100vh;
+  }
+  
   h1 {
     font-weight: 100;
     line-height: 1.3;
