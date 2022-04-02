@@ -1,0 +1,86 @@
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+@font-face {
+    font-family: "Lilita One";
+    src: url("LilitaOne.eot");
+    src: url('LilitaOne.eot?#iefix') format('embedded-opentype'),
+    url("LilitaOne.woff") format("woff"),
+    url("LilitaOne.otf") format("opentype"),
+    url("LilitaOne.svg#LilitaOne") format("svg");
+    }
+
+html{
+    height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: Lilita One;
+  line-height: 1.5;
+  margin: 1rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: hsl(269,19%,30%);
+  background-color: #ffffff
+}
+
+.fullCont{
+  display: inline;
+  height:100vh;
+}
+
+.imgLogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+}
+
+.appstore {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+}
+
+.gp {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
+
+
+h1 {
+  font-weight: 100;
+  line-height: 1.3;
+  text-align: center;
+  margin-bottom: .5rem;
+}
+p {
+  text-align: center;
+  margin: 1rem 0 .5rem;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px; 
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.btns {
+  display: block;
+  justify-content: center;
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 1rem;
+/*    background-color: #FFFFFF*/
+}
+
