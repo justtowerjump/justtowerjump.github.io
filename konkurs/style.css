@@ -34,11 +34,10 @@ body {
   height:100vh;
 }
 
-.imgLogo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100px;
+#imgLogo {
+  width: 20px;
+  display: inline-block;
+  margin-bottom:-3px;
 }
 
 .appstore {
@@ -72,6 +71,7 @@ h2 {
     margin-bottom: .5rem;
   }
 p {
+    font-size: 20px;
   text-align: center;
   margin: 1rem 0 .5rem;
 }
@@ -110,9 +110,10 @@ form label,
   display: block;
   width: 100%;
   padding: 0;
-  margin: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  margin-bottom: 0;
+  border-radius: 15px;
+  /* -webkit-appearance: none;
+  -moz-appearance: none; */
 }
 form label,
 form legend {
@@ -146,6 +147,53 @@ form [type="email"],
   width: 100%;
 }
 
+input[type="file"] {
+    border: none;
+    padding: 0;
+}
+
+input[type=file]::-ms-browse {
+    border: none;
+    margin-right: 15px;
+    font-family: Lilita One;
+    padding: 10px 20px;
+    width: 120px;
+    border-radius: 50px;
+    background-color: #f2b757;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 200ms ease-in;
+  }
+  
+  input[type=file]::-webkit-file-upload-button {
+    border: none;
+    margin-right: 15px;
+    font-family: Lilita One;
+    padding: 10px 20px;
+    width: 120px;
+    border-radius: 50px;
+    background-color: #f2b757;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 200ms ease-in;
+  }
+  
+  input[type=file]::file-selector-button {
+    border: none;
+    margin-right: 15px;
+    font-family: Lilita One;
+    padding: 10px 20px;
+    width: 120px;
+    border-radius: 50px;
+    background-color: #f2b757;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 200ms ease-in;
+  }
+
 form [type="button"],
 form [type="submit"],
 form [type="reset"] {
@@ -166,6 +214,14 @@ background-color:#f6a31d;
 
 #centerr{
     margin: 0 auto;
+    margin-top: 20px;
+    align-items: center; 
+       display: flex;
+}
+
+#mail{
+    margin-top: 5px;
+    margin-bottom: 5px;
     align-items: center; 
        display: flex;
 }
@@ -179,3 +235,15 @@ form [type="reset"]:focus {
 form select {
   text-transform: none;
 }
+
+input[type='checkbox'] {
+    float: left;
+    width: 20px;
+    margin-right: 6px;
+    margin-top: 3px;
+    height: 17px;
+  }
+  input[type='checkbox'] + label {
+    display: block;
+    width: 30px;
+  }

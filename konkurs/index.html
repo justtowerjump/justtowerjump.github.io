@@ -11,17 +11,21 @@
     
             <h1>Konkurs!</h1>
 
-            <p>Ilość miejsc ograniczona</p>
-            <h2>Wygraj</h2>
+            <div class="gp"> 
+                <p>Twórcy gry &nbsp;<img id="imgLogo" src="https://raw.githubusercontent.com/justtowerjump/justtowerjump.github.io/master/LogoSquare.png"><span style="color: #f6a31d">  Just Tower Jump?</span> zapraszają do wzięcia udziału w konkursie &nbsp; <span style="color: #f6a31d">Wskocz na podium</span></p>
+                🥇 <br>
+                🥈 <br>
+                🥉 <br>
+                <p>Ilość miejsc ograniczona! <br> Zapisz się już teraz</p>
+
+            </div>
           
-            <img class="imgLogo" src="https://raw.githubusercontent.com/justtowerjump/justtowerjump.github.io/master/LogoSquare.png">
             
             <div class=btns>
           
               <a href="https://apps.apple.com/us/app/just-tower-jump/id1567262685">
                 <img class="appstore" src="https://raw.githubusercontent.com/justtowerjump/justtowerjump.github.io/master/konkurs/appstore.png">
               </a>
-              <h1> or </h1>
               <a href="https://play.google.com/store/apps/details?id=com.EmptyField.JustTowerJump">
                 <img class="gp" src="https://raw.githubusercontent.com/justtowerjump/justtowerjump.github.io/master/konkurs/google-play-badge.png">
               </a>
@@ -31,14 +35,14 @@
 
             <div class=btns>
                 <form action="https://formspree.io/f/mlezwapy" method="POST" >
-                <label>
-                    Twój adres email:
-                    <input type="email" name="email" required>
+                <label>Twój adres email: <input id="mail" type="email" name="email" required>
                 </label>
-                <label for="upload">Pierwsza zaproszona osoba:</label>
+                <label  for="upload">Pierwsza zaproszona osoba:</label>
                 <input type="file" name="upload" required accept="image/png, image/jpeg">
                 <label for="upload">Druga zaproszona osoba:</label>
                 <input type="file" name="upload" required accept="image/png, image/jpeg">
+                <label for="reg"> Akceptuję Regulamin konkursu <span> <input type="checkbox" name="reg" required value="yes"> </span> </label>
+
                 <!-- your other form fields go here -->
                 <div>
                     <button id="centerr" type="submit">Biorę udział!</button>
