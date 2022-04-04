@@ -5,6 +5,7 @@
       <link rel="stylesheet" href="style.css">
     </head>
     
+
     <body>
       <div class=fullCont>
 
@@ -12,22 +13,40 @@
             <h1>Konkurs!</h1>
 
             <div class="gp"> 
-                <p>Twórcy gry &nbsp;<img id="imgLogo" src="https://raw.githubusercontent.com/justtowerjump/justtowerjump.github.io/master/LogoSquare.png"><span style="color: #f6a31d">  Just Tower Jump?</span> zapraszają do wzięcia udziału w konkursie &nbsp; <span style="color: #f6a31d">Wskocz na podium</span></p>
-                🥇 <br>
-                🥈 <br>
-                🥉 <br>
-                <p>Ilość miejsc ograniczona! <br> Zapisz się już teraz</p>
-
+                <p>Twórcy gry &nbsp;<img id="imgLogo" src="https://raw.githubusercontent.com/justtowerjump/justtowerjump.github.io/master/LogoSquare.png"><span style="color: #f6a31d">  Just Tower Jump?</span> zapraszają do wzięcia udziału w konkursie pt. <span style="color: #f6a31d">Wskocz na podium</span>.<br>Aby wygrać jedną z nagród...</p>
+                <p id="placeOne">🥇 800 zł </p>  
+                <p id="placeTwo">🥈 600 zł </p> 
+                <p id="placeThree">🥉 420 zł</p> 
             </div>
-          
             
-            <div class=btns>
+            <div class="stepBlock">
+                <p class="stepHeader">Krok 1</p>
+                <p class="step">Upewnij się że są wolne miejsca...</p>
+                <p class="freePlaces">Stan na <span id="current_date"></span>:<span style="color: #009e0b"> &nbsp; Są dostępne miejsca</span> </p>
+                <script>
+                    date = new Date();
+                    const monthNames = ["stycznia", "lutego", "marca", "kwietnia", "maja", "czerwca",
+                    "lipca", "sierpnia", "września", "października", "listopada", "grudnia"
+                    ];
+                    month = monthNames[date.getMonth()];
+                    day = date.toLocaleDateString("pl-PL", { weekday: 'long' });
+                    dayNum = date.getDate();
+                    document.getElementById("current_date").innerHTML = day + " " + dayNum + " " + month;
+                </script>
+            </div>
+
+            <div class="stepBlock">
+                <p class="stepHeader">Krok 2</p>
+                <p class="step">Pobierz grę <img id="imgLogo" src="https://raw.githubusercontent.com/justtowerjump/justtowerjump.github.io/master/LogoSquare.png"><span style="color: #f6a31d">  Just Tower Jump?</span></p>
+            </div>
+            
+            <div class=downloadButtons>
           
               <a href="https://apps.apple.com/us/app/just-tower-jump/id1567262685">
-                <img class="appstore" src="https://raw.githubusercontent.com/justtowerjump/justtowerjump.github.io/master/konkurs/appstore.png">
+                <img id="appstore" src="https://raw.githubusercontent.com/justtowerjump/justtowerjump.github.io/master/konkurs/appstore.png">
               </a>
               <a href="https://play.google.com/store/apps/details?id=com.EmptyField.JustTowerJump">
-                <img class="gp" src="https://raw.githubusercontent.com/justtowerjump/justtowerjump.github.io/master/konkurs/google-play-badge.png">
+                <img id="googleplay" src="https://raw.githubusercontent.com/justtowerjump/justtowerjump.github.io/master/konkurs/google-play-badge.png">
               </a>
           
             </div>
