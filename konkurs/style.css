@@ -11,7 +11,7 @@
     src: url('LilitaOne.eot?#iefix') format('embedded-opentype'),
     url("LilitaOne.woff") format("woff"),
     url("LilitaOne.otf") format("opentype"),
-    /* url("LilitaOne.svg#LilitaOne") format("svg"); */
+    url("LilitaOne.svg#LilitaOne") format("svg");
     }
 
 html{
