@@ -1,76 +1,87 @@
 <html>
-  
-    <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="style.css">
-    </head>
-    
 
-    <body>
-      <div class=fullCont>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    
-            <h1>Konkurs!</h1>
 
-            <div class="gp"> 
-                <p>Twórcy gry &nbsp;<img id="imgLogo" src="https://raw.githubusercontent.com/justtowerjump/justtowerjump.github.io/master/LogoSquare.png"><span style="color: #f6a31d">  Just Tower Jump?</span> zapraszają do wzięcia udziału w konkursie pt. <span style="color: #f6a31d">Wskocz na podium</span>.<br>Aby wygrać jedną z nagród...</p>
-                <p id="placeOne">🥇 800 zł </p>  
-                <p id="placeTwo">🥈 600 zł </p> 
-                <p id="placeThree">🥉 420 zł</p> 
-            </div>
-            
-            <div class="stepBlock">
-                <p class="stepHeader">Krok 1</p>
-                <p class="step">Upewnij się że są wolne miejsca...</p>
-                <p class="freePlaces">Stan na <span id="current_date"></span>:<span style="color: #009e0b"> &nbsp; Są dostępne miejsca</span> </p>
-                <script>
-                    date = new Date();
-                    const monthNames = ["stycznia", "lutego", "marca", "kwietnia", "maja", "czerwca",
+<body>
+    <div class=fullCont>
+
+
+        <h1>Konkurs!</h1>
+
+        <div class="gp">
+            <p>Twórcy gry &nbsp;<img id="imgLogo"
+                    src="https://raw.githubusercontent.com/justtowerjump/justtowerjump.github.io/master/LogoSquare.png"><span
+                    style="color: #f6a31d"> Just Tower Jump?</span> zapraszają do wzięcia udziału w konkursie pt. <span
+                    style="color: #f6a31d">Wskocz na podium</span>.<br>Aby wygrać jedną z nagród...</p>
+            <p id="placeOne">🥇 800 zł </p>
+            <p id="placeTwo">🥈 600 zł </p>
+            <p id="placeThree">🥉 420 zł</p>
+        </div>
+
+        <div class="stepBlock">
+            <p class="stepHeader">Krok 1</p>
+            <p class="step">Upewnij się że są wolne miejsca...</p>
+            <p class="freePlaces">Stan na <span id="current_date"></span>:<span style="color: #009e0b"> &nbsp; Są
+                    dostępne miejsca</span><br>PS &nbsp; Ilośc miejsc ograniczona! </p>
+            <script>
+                date = new Date();
+                const monthNames = ["stycznia", "lutego", "marca", "kwietnia", "maja", "czerwca",
                     "lipca", "sierpnia", "września", "października", "listopada", "grudnia"
-                    ];
-                    month = monthNames[date.getMonth()];
-                    day = date.toLocaleDateString("pl-PL", { weekday: 'long' });
-                    dayNum = date.getDate();
-                    document.getElementById("current_date").innerHTML = day + " " + dayNum + " " + month;
-                </script>
-            </div>
+                ];
+                month = monthNames[date.getMonth()];
+                day = date.toLocaleDateString("pl-PL", { weekday: 'long' });
+                dayNum = date.getDate();
+                document.getElementById("current_date").innerHTML = day + " " + dayNum + " " + month;
+            </script>
+        </div>
 
-            <div class="stepBlock">
-                <p class="stepHeader">Krok 2</p>
-                <p class="step">Pobierz grę <img id="imgLogo" src="https://raw.githubusercontent.com/justtowerjump/justtowerjump.github.io/master/LogoSquare.png"><span style="color: #f6a31d">  Just Tower Jump?</span></p>
-            </div>
-            
+        <div class="stepBlock">
+            <p class="stepHeader">Krok 2</p>
+            <p class="step">Pobierz grę &nbsp;<img id="imgLogo"
+                    src="https://raw.githubusercontent.com/justtowerjump/justtowerjump.github.io/master/LogoSquare.png"><span
+                    style="color: #f6a31d"> Just Tower Jump?</span></p>
+
             <div class=downloadButtons>
-          
-              <a href="https://apps.apple.com/us/app/just-tower-jump/id1567262685">
-                <img id="appstore" src="https://raw.githubusercontent.com/justtowerjump/justtowerjump.github.io/master/konkurs/appstore.png">
-              </a>
-              <a href="https://play.google.com/store/apps/details?id=com.EmptyField.JustTowerJump">
-                <img id="googleplay" src="https://raw.githubusercontent.com/justtowerjump/justtowerjump.github.io/master/konkurs/google-play-badge.png">
-              </a>
-          
+                <a href="https://apps.apple.com/us/app/just-tower-jump/id1567262685">
+                    <img id="appstore"
+                        src="https://raw.githubusercontent.com/justtowerjump/justtowerjump.github.io/master/konkurs/appstore.png">
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.EmptyField.JustTowerJump">
+                    <img id="googleplay"
+                        src="https://raw.githubusercontent.com/justtowerjump/justtowerjump.github.io/master/konkurs/google-play-badge.png">
+                </a>
             </div>
+        </div>
+<!-- shift alt F ormat -->
 
+        <div class="stepBlock">
+            <p class="stepHeader">Krok 3</p>
+            <p class="step stepMultilineText">Zaproś 2 osoby do wzięcia udziału w konkursie i wykonaj 2 zrzuty ekranu pokazujące w jaki sposób zaprosiłeś/aś znajomą osobę (np. <a href="https://m.facebook.com/messages/compose?ids=1">Messenger</a>) </p>
+        </div>
 
-            <div class=btns>
-                <form action="https://formspree.io/f/mlezwapy" method="POST" >
+        <div class=btns>
+            <form action="https://formspree.io/f/mlezwapy" method="POST">
                 <label>Twój adres email: <input id="mail" type="email" name="email" required>
                 </label>
-                <label  for="upload">Pierwsza zaproszona osoba:</label>
+                <label for="upload">Pierwsza zaproszona osoba:</label>
                 <input type="file" name="upload" required accept="image/png, image/jpeg">
                 <label for="upload">Druga zaproszona osoba:</label>
                 <input type="file" name="upload" required accept="image/png, image/jpeg">
-                <label for="reg"> Akceptuję Regulamin konkursu <span> <input type="checkbox" name="reg" required value="yes"> </span> </label>
+                <label for="reg"> Akceptuję Regulamin konkursu <span> <input type="checkbox" name="reg" required
+                            value="yes"> </span> </label>
 
                 <!-- your other form fields go here -->
                 <div>
                     <button id="centerr" type="submit">Biorę udział!</button>
                 </div>
-                </form>
-            </div>
+            </form>
+        </div>
 
-      </div>
-    </body>
+    </div>
+</body>
 
 </html>
-
