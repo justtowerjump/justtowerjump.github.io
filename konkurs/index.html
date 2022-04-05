@@ -19,7 +19,7 @@
             <p id="placeOne">🥇 800 zł </p>
             <p id="placeTwo">🥈 600 zł </p>
             <p id="placeThree">🥉 420 zł</p>
-            <p id="placeThree">Nagroda specjalna:&nbsp; 300 zł</p>
+            <p id="placeThree">Nagroda Specjalna:&nbsp; 300 zł</p>
         </div>
 
         <div class="stepBlock">
@@ -73,9 +73,24 @@
                 konkursie <button onclick="copyText()">Kliknij i skopiuj link do konkursu</button><br> Oraz wykonaj
                 <span style="color: #f6a31d">2 zrzuty ekranu</span>
                 pokazujące w jaki sposób zaprosiłeś/aś znajomą osobę (np. w wiadomości <a
-                    href="https://m.facebook.com/messages/compose?ids=1">Messenger</a>) <br><br>
-                Na tym etapie walczysz już o nagrodę specjalną. Wystarczy że wypełnisz poniższy formularz, abyśmy mogli
-                się z Tobą skontaktować w przypadku wygranej
+                    href="https://m.facebook.com/messages/compose?ids=1">Messenger</a> lub gołębiem pocztowym).
+            </p>
+        </div>
+
+        <div class="stepBlock">
+            <p class="stepHeader">Krok 4</p>
+            <p class="step stepMultilineText">
+                Na tym etapie walczysz już o <span
+                style="color: #f6a31d"> Nagrodę Specjalną</span>. Wystarczy że wypełnisz formularz w dolnej części strony, abyśmy mogli
+                się z Tobą skontaktować w przypadku wygranej. Jury będzie oceniać kreatywność zaproszeń.<br><br>
+                Aby zawalczyć o miejsce na podium 🏆, dodatkowo przygotuj filmik pokazujący jak zdobywasz swój najwyższy wynik w grze <img id="imgLogo"
+                src="https://raw.githubusercontent.com/justtowerjump/justtowerjump.github.io/master/LogoSquare.png"><span
+                style="color: #f6a31d"> Just Tower Jump?</span> i wyślij go w dowolnej formie (np. załącznik, link do YouTube) na adres <a href="mailto:emptyfield@wp.pl">emptyfield@wp.pl</a>.
+                Gdy uda Ci się pobić swój wynik, możesz wysłać kolejny film na ten sam adres mailowy co wyżej!<br><br>
+
+                Rozstrzygnięcie konkursu nastąpi:<br>
+                31 maja 2022 roku!
+
             </p>
         </div>
 
@@ -102,8 +117,8 @@
                 <input type="file" name="uploadSecond" required accept="image/png, image/jpeg">
                 <label for="reg"> Akceptuję Regulamin konkursu <span> <input type="checkbox" name="reg" required value="yes"> </span> </label>
                 <label id="moreChanceLabel" for="moreChance"> Chcę zwiększyć szansę na wygraną udostępniając na Facebooku lub Instagramie (opcjonalnie) <span> <input onclick="moreChancerReveal()" id="moreChancer" type="checkbox" name="moreChance" value="yes"> </span> </label>
-                <div id="moreChanceFile" style="display: none;">
-                    <label for="uploadChancer">Screenshot posta:</label>
+                <div id="moreChanceFile" style="display: none; margin-bottom: -30;">
+                    <label for="uploadChancer">Screenshot posta lub relacji:</label>
                     <input type="file" name="uploadChancer" accept="image/png, image/jpeg">
                 </div>
                 <div>
