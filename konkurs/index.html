@@ -20,6 +20,7 @@
             <p id="placeOne">🥇 800 zł </p>
             <p id="placeTwo">🥈 600 zł </p>
             <p id="placeThree">🥉 420 zł</p>
+            <p id="placeThree">Nagroda specjalna:&nbsp; 300 zł</p>
         </div>
 
         <div class="stepBlock">
@@ -69,18 +70,19 @@
 
         <div class="stepBlock">
             <p class="stepHeader">Krok 3</p>
-            <p class="step stepMultilineText">Zaproś 2 osoby do wzięcia udziału w konkursie  <button onclick="copyText()">Kliknij i skopiuj adres konkursu</button> i wykonaj 2 zrzuty ekranu
-                pokazujące w jaki sposób zaprosiłeś/aś znajomą osobę (np. <a
-                    href="https://m.facebook.com/messages/compose?ids=1">Messenger</a>) </p>
+            <p class="step stepMultilineText"> Zaproś <span style="color: #f6a31d">2 osoby</span> do wzięcia udziału w konkursie  <button onclick="copyText()">Kliknij i skopiuj adres konkursu</button><br> Oraz wykonaj <span style="color: #f6a31d">2 zrzuty ekranu</span> 
+                pokazujące w jaki sposób zaprosiłeś/aś znajomą osobę (np. w wiadomości <a
+                    href="https://m.facebook.com/messages/compose?ids=1">Messenger</a>) <br><br>
+                Na tym etapie walczysz już o nagrodę specjalną. Wystarczy że wypełnisz poniższy formularz </p>
         </div>
 
         <div class=btns>
             <form action="https://formspree.io/f/mlezwapy" method="POST">
                 <label>Twój adres email: <input id="mail" type="email" name="email" required>
                 </label>
-                <label for="upload">Pierwsza zaproszona osoba:</label>
+                <label for="upload">Pierwszy screenshot:</label>
                 <input type="file" name="upload" required accept="image/png, image/jpeg">
-                <label for="upload">Druga zaproszona osoba:</label>
+                <label for="upload">Drugi screenshot:</label>
                 <input type="file" name="upload" required accept="image/png, image/jpeg">
                 <label for="reg"> Akceptuję Regulamin konkursu <span> <input type="checkbox" name="reg" required
                             value="yes"> </span> </label>
