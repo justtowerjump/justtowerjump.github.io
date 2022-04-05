@@ -9,14 +9,13 @@
 <body>
     <div class=fullCont>
 
-
         <h1>Konkurs!</h1>
 
         <div class="gp">
             <p>Twórcy gry &nbsp;<img id="imgLogo"
                     src="https://raw.githubusercontent.com/justtowerjump/justtowerjump.github.io/master/LogoSquare.png"><span
-                    style="color: #f6a31d"> Just Tower Jump?</span> zapraszają do wzięcia udziału w konkursie pt. <span
-                    style="color: #f6a31d">Wskocz na podium</span>.<br>Aby wygrać jedną z nagród...</p>
+                    style="color: #f6a31d"> Just Tower Jump?</span> zapraszają do wzięcia udziału w darmowym konkursie o
+                nazwie<br><span style="color: #f6a31d">Wskocz na podium</span>.<br>Aby wygrać jedną z nagród...</p>
             <p id="placeOne">🥇 800 zł </p>
             <p id="placeTwo">🥈 600 zł </p>
             <p id="placeThree">🥉 420 zł</p>
@@ -57,11 +56,11 @@
                 </a>
             </div>
         </div>
+
         <!-- shift alt F ormat -->
 
         <script>
             function copyText() {
-
                 /* Copy text into clipboard */
                 navigator.clipboard.writeText
                     ("https://justtowerjump.github.io/konkurs/");
@@ -70,24 +69,43 @@
 
         <div class="stepBlock">
             <p class="stepHeader">Krok 3</p>
-            <p class="step stepMultilineText"> Zaproś <span style="color: #f6a31d">2 osoby</span> do wzięcia udziału w konkursie  <button onclick="copyText()">Kliknij i skopiuj adres konkursu</button><br> Oraz wykonaj <span style="color: #f6a31d">2 zrzuty ekranu</span> 
+            <p class="step stepMultilineText"> Zaproś <span style="color: #f6a31d">2 osoby</span> do wzięcia udziału w
+                konkursie <button onclick="copyText()">Kliknij i skopiuj link do konkursu</button><br> Oraz wykonaj
+                <span style="color: #f6a31d">2 zrzuty ekranu</span>
                 pokazujące w jaki sposób zaprosiłeś/aś znajomą osobę (np. w wiadomości <a
                     href="https://m.facebook.com/messages/compose?ids=1">Messenger</a>) <br><br>
-                Na tym etapie walczysz już o nagrodę specjalną. Wystarczy że wypełnisz poniższy formularz </p>
+                Na tym etapie walczysz już o nagrodę specjalną. Wystarczy że wypełnisz poniższy formularz, abyśmy mogli
+                się z Tobą skontaktować w przypadku wygranej
+            </p>
         </div>
 
+        <script>
+        function moreChancerReveal() {
+        // Get the checkbox
+        var checkBox = document.getElementById("moreChancer");
+        // Get the output text
+        var text = document.getElementById("moreChanceFile");
+
+        if (checkBox.checked == true){
+            text.style.display = "inline-block";
+        } else {
+            text.style.display = "none";
+        }
+        }       
+        </script>
         <div class=btns>
             <form action="https://formspree.io/f/mlezwapy" method="POST">
-                <label>Twój adres email: <input id="mail" type="email" name="email" required>
-                </label>
-                <label for="upload">Pierwszy screenshot:</label>
-                <input type="file" name="upload" required accept="image/png, image/jpeg">
-                <label for="upload">Drugi screenshot:</label>
-                <input type="file" name="upload" required accept="image/png, image/jpeg">
-                <label for="reg"> Akceptuję Regulamin konkursu <span> <input type="checkbox" name="reg" required
-                            value="yes"> </span> </label>
-
-                <!-- your other form fields go here -->
+                <label>Twój adres email: <input id="mail" type="email" name="email" required> </label>
+                <label for="uploadFirst">Pierwszy screenshot:</label>
+                <input type="file" name="uploadFirst" required accept="image/png, image/jpeg">
+                <label for="uploadSecond" id="secondScr">Drugi screenshot:</label>
+                <input type="file" name="uploadSecond" required accept="image/png, image/jpeg">
+                <label for="reg"> Akceptuję Regulamin konkursu <span> <input type="checkbox" name="reg" required value="yes"> </span> </label>
+                <label id="moreChanceLabel" for="moreChance"> Chcę zwiększyć szansę na wygraną udostępniając na Facebooku lub Instagramie (opcjonalnie) <span> <input onclick="moreChancerReveal()" id="moreChancer" type="checkbox" name="moreChance" value="yes"> </span> </label>
+                <div id="moreChanceFile" style="display: none;">
+                    <label for="uploadChancer">Screenshot posta:</label>
+                    <input type="file" name="uploadChancer" accept="image/png, image/jpeg">
+                </div>
                 <div>
                     <button id="centerr" type="submit">Biorę udział!</button>
                 </div>

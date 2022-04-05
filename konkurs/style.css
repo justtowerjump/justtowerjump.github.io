@@ -37,7 +37,7 @@ body {
   display: inline;
   height: 100vh;
   max-width: 100%;
-  width: 90%;
+  width: 100%;
 }
 
 #imgLogo {
@@ -163,7 +163,7 @@ p {
     float: left;
     display: block;
     justify-content: center;
-    width: 375px;
+    /* width: 375px; */
     margin: 0 auto;
     margin-top: 14px;
     margin-bottom: -7px;
@@ -302,6 +302,18 @@ background-color:#f6a31d;
        display: flex;
 }
 
+#secondScr{
+    margin-top: -13px;
+}
+
+#moreChancer{
+margin-top: -8px;
+}
+
+#moreChanceLabel{
+    width: 378px;
+}
+
 form [type="button"]:focus,
 form [type="submit"]:focus,
 form [type="reset"]:focus {
@@ -316,6 +328,7 @@ input[type='checkbox'] {
     float: left;
     width: 20px;
     margin-right: 6px;
+    margin-left: -6px;
     margin-top: 3px;
     height: 17px;
   }
